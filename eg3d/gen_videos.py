@@ -15,7 +15,7 @@ import re
 from typing import List, Optional, Tuple, Union
 
 import click
-import dnnlib
+from eg3d import dnnlib
 import imageio
 import numpy as np
 import scipy.interpolate
@@ -23,10 +23,10 @@ import torch
 from tqdm import tqdm
 import mrcfile
 
-import legacy
+from eg3d import legacy
 
-from camera_utils import LookAtPoseSampler
-from torch_utils import misc
+from eg3d.camera_utils import LookAtPoseSampler
+from eg3d.torch_utils import misc
 #----------------------------------------------------------------------------
 
 def layout_grid(img, grid_w=None, grid_h=1, float_to_uint8=True, chw_to_hwc=True, to_numpy=True):

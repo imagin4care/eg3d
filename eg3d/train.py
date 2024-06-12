@@ -21,11 +21,11 @@ import json
 import tempfile
 import torch
 
-import dnnlib
-from training import training_loop
-from metrics import metric_main
-from torch_utils import training_stats
-from torch_utils import custom_ops
+from eg3d import dnnlib
+from eg3d.training import training_loop
+from eg3d.metrics import metric_main
+from eg3d.torch_utils import training_stats
+from eg3d.torch_utils import custom_ops
 
 #----------------------------------------------------------------------------
 

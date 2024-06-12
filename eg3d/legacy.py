@@ -16,8 +16,8 @@ import re
 import copy
 import numpy as np
 import torch
-import dnnlib
-from torch_utils import misc
+from eg3d import dnnlib
+from eg3d.torch_utils import misc
 
 #----------------------------------------------------------------------------
 

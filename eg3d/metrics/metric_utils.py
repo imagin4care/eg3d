@@ -18,7 +18,7 @@ import copy
 import uuid
 import numpy as np
 import torch
-import dnnlib
+from eg3d import dnnlib
 
 #----------------------------------------------------------------------------
 

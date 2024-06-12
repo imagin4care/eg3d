@@ -10,8 +10,8 @@
 
 import numpy as np
 import imgui
-import dnnlib
-from gui_utils import imgui_utils
+from eg3d import dnnlib
+from eg3d.gui_utils import imgui_utils
 
 #----------------------------------------------------------------------------
 

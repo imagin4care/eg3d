@@ -16,11 +16,11 @@ import torch
 import torch.fft
 import torch.nn
 import matplotlib.cm
-import dnnlib
-from torch_utils.ops import upfirdn2d
-import legacy # pylint: disable=import-error
+from eg3d import dnnlib
+from eg3d.torch_utils.ops import upfirdn2d
+import eg3d.legacy # pylint: disable=import-error
 
-from camera_utils import LookAtPoseSampler
+from eg3d.camera_utils import LookAtPoseSampler
 
 
 

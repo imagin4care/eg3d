@@ -14,7 +14,7 @@ import os
 import time
 import json
 import torch
-import dnnlib
+from eg3d import dnnlib
 
 from . import metric_utils
 from . import frechet_inception_distance

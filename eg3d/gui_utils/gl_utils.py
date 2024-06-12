@@ -14,7 +14,7 @@ import contextlib
 import numpy as np
 import OpenGL.GL as gl
 import OpenGL.GL.ARB.texture_float
-import dnnlib
+from eg3d import dnnlib
 
 #----------------------------------------------------------------------------
 

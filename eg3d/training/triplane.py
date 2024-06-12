@@ -9,11 +9,11 @@
 # its affiliates is strictly prohibited.
 
 import torch
-from torch_utils import persistence
-from training.networks_stylegan2 import Generator as StyleGAN2Backbone
-from training.volumetric_rendering.renderer import ImportanceRenderer
-from training.volumetric_rendering.ray_sampler import RaySampler
-import dnnlib
+from eg3d.torch_utils import persistence
+from eg3d.training.networks_stylegan2 import Generator as StyleGAN2Backbone
+from eg3d.training.volumetric_rendering.renderer import ImportanceRenderer
+from eg3d.training.volumetric_rendering.ray_sampler import RaySampler
+from eg3d import dnnlib
 
 @persistence.persistent_class
 class TriPlaneGenerator(torch.nn.Module):

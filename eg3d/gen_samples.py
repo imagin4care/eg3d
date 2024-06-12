@@ -15,7 +15,7 @@ import re
 from typing import List, Optional, Tuple, Union
 
 import click
-import dnnlib
+from eg3d import dnnlib
 import numpy as np
 import PIL.Image
 import torch
@@ -23,10 +23,10 @@ from tqdm import tqdm
 import mrcfile
 
 
-import legacy
-from camera_utils import LookAtPoseSampler, FOV_to_intrinsics
-from torch_utils import misc
-from training.triplane import TriPlaneGenerator
+from eg3d import legacy
+from eg3d.camera_utils import LookAtPoseSampler, FOV_to_intrinsics
+from eg3d.torch_utils import misc
+from eg3d.training.triplane import TriPlaneGenerator
 
 
 #----------------------------------------------------------------------------
