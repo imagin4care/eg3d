@@ -35,3 +35,4 @@ dependencies:
     - psutil
     - mrcfile
     - tensorboard
+    - setuptools==69.5.1
