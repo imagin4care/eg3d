@@ -68,7 +68,10 @@ class _LegacyUnpickler(pickle.Unpickler):
     def find_class(self, module, name):
         if module == 'dnnlib.tflib.network' and name == 'Network':
             return _TFNetworkStub
-        return super().find_class(module, name)
+        try:
+            return super().find_class(module, name)
+        except ModuleNotFoundError:
+            return super().find_class(f'eg3d.{module}', name)
 
 #----------------------------------------------------------------------------
 
