@@ -1,1 +1,1 @@
-recursive-include eg3d/torch_utils/ops *.cu *.h
+recursive-include eg3d/torch_utils/ops *.cu *.h *.cpp
